@@ -25,7 +25,6 @@ public class CategoryController {
 
     @GetMapping
     public ResponseEntity<CatorgoryListDTO> getallCatetories(){
-
         return new ResponseEntity<CatorgoryListDTO>(
                 new CatorgoryListDTO(categoryService.getAllCategories()), HttpStatus.OK);
     }

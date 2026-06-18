@@ -9,11 +9,11 @@ import org.springframework.stereotype.Component;
  * Created by jt on 9/24/17.
  */
 @Component
-public class Bootstrap implements CommandLineRunner{
+public class CategoryBootstrap implements CommandLineRunner{
 
     private CategoryRepository categoryRespository;
 
-    public Bootstrap(CategoryRepository categoryRespository) {
+    public CategoryBootstrap(CategoryRepository categoryRespository) {
         this.categoryRespository = categoryRespository;
     }
 
