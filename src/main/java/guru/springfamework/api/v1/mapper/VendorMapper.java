@@ -8,7 +8,7 @@ import org.mapstruct.factory.Mappers;
 /**
  * Created by jt on 10/6/17.
  */
-@Mapper
+@Mapper(componentModel = "spring")
 public interface VendorMapper {
 
     VendorMapper INSTANCE = Mappers.getMapper(VendorMapper.class);
